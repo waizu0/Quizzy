@@ -78,7 +78,7 @@
 .line-div {
     display: flex;
     color: #919191;
-    justify-content: start;
+    justify-content: flex-start;
   }
   
   .line-counter {
