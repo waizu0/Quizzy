@@ -1,0 +1,25 @@
+.container-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #007acc;
+    max-height: 1.4rem;
+    display: flex;
+    align-items: center;
+    z-index: 24;
+  }
+  
+  .container-footer p {
+    color: white;
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .container-footer p:hover {
+    color: #46adf3;
+  }

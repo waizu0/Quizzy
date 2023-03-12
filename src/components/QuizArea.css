@@ -1,0 +1,63 @@
+.quiz-area-container {
+
+    /* Sabendo que temos uma sidebar que vai sobrepôr o main-area, precisamos de um padding-left para que o main-area não fique colado à sidebar */
+    padding-left: 12.5em;
+    padding-top: 1.8rem;
+    height: 93.9vh;
+}
+
+.tabsManager {
+    display: flex;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    background-color: var(--sidebar);
+    height: 3.5rem;
+}
+
+.close{
+    opacity: 0;
+}
+
+.tabs {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 1rem;
+    color: rgb(125, 125, 125);
+    font-weight: 500;
+}
+
+.tab {
+    margin-right: .15rem;
+    cursor: pointer;
+    list-style: none;
+    margin-top: 5px;
+    padding: 0 1rem;
+    background-color: #2D2D2D;
+}
+
+.tab:hover .close {
+    opacity: 1;
+    }
+
+.tab-icon{
+    color: var(--yellow);
+}
+
+/* Queries for devices with width smaller than 580px */
+
+@media screen and (max-width: 580px) {
+   .quiz-area-container {
+        padding-left: 0;
+    }
+    .tabsManager {
+        height: 3.5rem;
+    }
+    .tabs {
+        padding: 0 6.7rem;
+    }
+    .tab {
+        padding: 0 0.5rem;
+    }
+}
