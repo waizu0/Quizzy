@@ -9,10 +9,15 @@ import { BsLayoutSplit } from 'react-icons/bs'
 import { BiDotsHorizontalRounded, BiCube } from 'react-icons/bi'
 
 function QuizArea() {
+
+    const lines = [...Array(18).keys()];
+
+
+
   return (
     <div className='quiz-area-container'>
         
-        
+
         <div className="tabs-manager">
                
         <ul className="tabs">
@@ -37,7 +42,23 @@ function QuizArea() {
                
             <p>src {'>'} components {'>'} <DiJavascript1 className='js-path'/> quizzy.js {'>'} <BiCube className='cube'/> quizzy</p>
                
-               </div>
+        </div>
+
+        <div className="line-div">
+  <div className="line-counter">
+    {lines.map((index) => (
+      <p className="line-value" key={index + 1}>
+        {index + 1}
+      </p>
+    ))}
+  </div>
+
+  <div className="quiz-content">
+    
+  </div>
+        </div>
+
+
     
     </div>
   )

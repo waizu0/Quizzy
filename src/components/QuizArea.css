@@ -1,6 +1,5 @@
 .quiz-area-container {
 
-    /* Sabendo que temos uma sidebar que vai sobrepôr o main-area, precisamos de um padding-left para que o main-area não fique colado à sidebar */
     padding-left: 12.5em;
     padding-top: 1.8rem;
     height: 93.9vh;
@@ -76,9 +75,31 @@
     padding: 4px 15px;
 }
 
+.line-div {
+    display: flex;
+    color: #919191;
+    justify-content: start;
+  }
+  
+  .line-counter {
+    margin-left: 1rem;
+  }
+  
+  .quiz-content {
+    margin-right: 1rem;
+    color: var(--whitish);
+    border-left: 1px solid rgb(101, 101, 101);
+    padding: 0 1rem;
+  }
+  
 
 .js-path{
     color: var(--yellow);
+}
+
+.path-manager p:hover{
+    cursor: pointer;
+    color: #919191;
 }
 
 .cube{

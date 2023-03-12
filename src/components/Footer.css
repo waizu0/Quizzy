@@ -1,13 +1,13 @@
 .container-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: #007acc;
-    max-height: 1.4rem;
-    display: flex;
-    align-items: center;
-    z-index: 24;
-  }
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #007acc;
+  max-height: 1.4rem;
+  display: flex;
+  align-items: center;
+  z-index: 24;
+}
   
   .container-footer p {
     color: white;
@@ -21,5 +21,5 @@
   }
 
   .container-footer p:hover {
-    color: #46adf3;
+    background-color: #46adf3;
   }

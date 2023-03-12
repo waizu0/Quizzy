@@ -1,3 +1,13 @@
 body {
     background-color: var(--background);
 }
+
+::-moz-selection{
+    background: var(--select-text);
+    color: black;
+  }
+  
+  ::selection {
+    background: var(--select-text);
+    color: black;
+  }
