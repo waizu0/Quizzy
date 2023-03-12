@@ -6,7 +6,7 @@
     height: 93.9vh;
 }
 
-.tabsManager {
+.tabs-manager {
     display: flex;
     position: sticky;
     top: 0;
@@ -14,6 +14,17 @@
     background-color: var(--sidebar);
     height: 3.5rem;
 }
+
+.path-manager {
+    display: flex;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    background-color: var(--background);
+    border-bottom: 2px solid black;
+    height: 1rem;
+}
+
 
 .close{
     opacity: 0;
@@ -45,13 +56,40 @@
     color: var(--yellow);
 }
 
-/* Queries for devices with width smaller than 580px */
+.right-corner{
+    display: flex;
+}
+
+.btn{
+    color: rgb(125, 125, 125);
+    padding: 0 0.2rem;
+}
+
+.btn:hover{
+    background-color: rgb(72, 72, 72);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.path-manager{
+    color: rgb(125, 125, 125);
+    padding: 4px 15px;
+}
+
+
+.js-path{
+    color: var(--yellow);
+}
+
+.cube{
+    color: var(--purple);
+}
 
 @media screen and (max-width: 580px) {
    .quiz-area-container {
         padding-left: 0;
     }
-    .tabsManager {
+    .tabs-manager {
         height: 3.5rem;
     }
     .tabs {
@@ -59,5 +97,14 @@
     }
     .tab {
         padding: 0 0.5rem;
+    }
+
+    .right-corner{
+        display: none;
+    }
+
+    .path-manager{
+        margin-left: 6.5em;
+        font-size: 0.9rem;
     }
 }
