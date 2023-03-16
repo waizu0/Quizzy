@@ -13,6 +13,7 @@ function App() {
       <Sidebar />
       <Footer />
       <QuizArea />
+
     </div>
   );
 }
